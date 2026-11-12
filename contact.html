@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contatti – Mattia Raccanelli</title>
+  <meta name="description" content="Disponibile per uno stage con prospettiva di assunzione o un contratto junior. Contatta Mattia Raccanelli.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Instrument+Serif:ital@1&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="curtain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"><i>View</i></div>
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <nav class="flex items-center justify-between px-6 py-5 text-xs md:px-10" aria-label="Principale">
+    <a href="index.html" class="font-medium">Mattia Raccanelli</a>
+    <ul class="hidden gap-12 text-white/70 md:flex">
+      <li><a class="link-u hover:text-white" href="index.html#work">Work</a></li>
+      <li><a class="link-u hover:text-white" href="about.html">About</a></li>
+      <li><a class="link-u hover:text-white" href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <button id="menu-btn" class="md:hidden" aria-expanded="false">Menu</button>
+  </nav>
+  <div id="mobile-menu" class="hidden px-6 pb-6 text-2xl font-display md:hidden">
+    <a class="block py-2" href="index.html#work">Work</a>
+    <a class="block py-2" href="about.html">About</a>
+    <a class="block py-2" href="contact.html" aria-current="page">Contact</a>
+  </div>
+</header>
+<main>
+  <section class="px-6 pb-28 pt-40 md:px-10 md:pb-36 md:pt-52">
+    <div class="mx-auto max-w-[1400px]">
+      <div class="grid gap-12 lg:grid-cols-12 lg:items-end lg:gap-8">
+        <div class="lg:col-span-7">
+          <h1 class="font-display text-[clamp(4rem,12vw,10rem)] leading-[.88] tracking-[-.06em]">
+            Let’s <em class="serif font-normal tracking-normal text-[#ff4d2e]">talk</em>
+          </h1>
+        </div>
+        <p class="max-w-xl text-lg font-light leading-relaxed text-white/70 lg:col-span-5 lg:justify-self-end lg:pb-2">
+          Cerco la mia prima opportunità in uno studio di grafica, in un’agenzia o in un’azienda. Sono disponibile per uno stage con prospettiva di assunzione o per un contratto junior, con inizio il prima possibile.
+        </p>
+      </div>
+
+      <div class="mt-16 border-t border-white/15 pt-8 md:mt-24 md:grid md:grid-cols-12 md:gap-8">
+        <h2 class="mb-6 text-xs uppercase tracking-[.18em] text-white/50 md:col-span-3">Disponibilità</h2>
+        <div class="flex flex-wrap gap-3 md:col-span-9">
+          <span class="rounded-full bg-[#3ddc3a] px-5 py-3 text-sm font-medium text-[#121214]">Disponibile subito</span>
+          <span class="rounded-full border border-white/20 px-5 py-3 text-sm text-white/85">Stage con assunzione</span>
+          <span class="rounded-full border border-white/20 px-5 py-3 text-sm text-white/85">Contratto junior</span>
+          <span class="rounded-full border border-white/20 px-5 py-3 text-sm text-white/85">Vicenza, Thiene e dintorni · 20–25 km</span>
+        </div>
+      </div>
+
+      <div class="mt-16 grid gap-4 md:mt-24 lg:grid-cols-2 md:gap-6">
+        <a href="mailto:mattiaraccca05@gmail.com" class="group min-w-0 rounded-[2rem] bg-[#e9e8e4] p-4 text-[#121214] transition-transform duration-500 hover:-translate-y-1 sm:p-5 md:p-10" data-cursor>
+          <div class="flex items-center justify-between">
+            <span class="text-xs uppercase tracking-[.18em] text-black/55">Email</span>
+            <span aria-hidden="true" class="text-2xl transition-transform duration-500 group-hover:-translate-y-1 group-hover:translate-x-1">↗</span>
+          </div>
+          <p class="mt-12 w-full max-w-full whitespace-nowrap font-display text-[clamp(.59375rem,3vw,.65rem)] leading-tight md:text-[clamp(.65rem,2vw,1.25rem)] lg:text-[clamp(.65rem,1.6vw,1.25rem)]">mattiaraccca05@gmail.com</p>
+        </a>
+        <a href="tel:+39327473693" class="group min-w-0 rounded-[2rem] border border-white/15 bg-white/[.04] p-7 transition-transform duration-500 hover:-translate-y-1 md:p-10" data-cursor>
+          <div class="flex items-center justify-between">
+            <span class="text-xs uppercase tracking-[.18em] text-white/50">Telefono</span>
+            <span aria-hidden="true" class="text-2xl text-[#3ddc3a] transition-transform duration-500 group-hover:-translate-y-1 group-hover:translate-x-1">↗</span>
+          </div>
+          <p class="mt-12 whitespace-nowrap font-display text-[clamp(1.5rem,3.5vw,3rem)] leading-tight">327 473 7693</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="flex flex-wrap justify-between gap-4 border-t border-white/10 px-6 py-8 text-xs text-white/45 md:px-10">
+  <p>© <span id="year"></span> Mattia Raccanelli</p>
+  <a class="link-u hover:text-white" href="index.html">Torna ai progetti</a>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

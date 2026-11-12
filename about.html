@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Mattia Raccanelli</title>
+  <meta name="description" content="Scopri il percorso, la formazione e l'esperienza di Mattia Raccanelli, Visual & Motion Designer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Instrument+Serif:ital@1&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="curtain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"><i>View</i></div>
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <nav class="flex items-center justify-between px-6 py-5 text-xs md:px-10" aria-label="Principale">
+    <a href="index.html" class="font-medium">Mattia Raccanelli</a>
+    <ul class="hidden gap-12 text-white/70 md:flex">
+      <li><a class="link-u hover:text-white" href="index.html#work">Work</a></li>
+      <li><a class="link-u hover:text-white" href="about.html" aria-current="page">About</a></li>
+      <li><a class="link-u hover:text-white" href="contact.html">Contact</a></li>
+    </ul>
+    <button id="menu-btn" class="md:hidden" aria-expanded="false">Menu</button>
+  </nav>
+  <div id="mobile-menu" class="hidden px-6 pb-6 text-2xl font-display md:hidden">
+    <a class="block py-2" href="index.html#work">Work</a>
+    <a class="block py-2" href="about.html" aria-current="page">About</a>
+    <a class="block py-2" href="contact.html">Contact</a>
+  </div>
+</header>
+<main>
+  <section class="px-6 pb-24 pt-40 md:px-10 md:pb-36 md:pt-52">
+    <div class="mx-auto max-w-[1400px]">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-8">
+        <div class="min-w-0 lg:col-span-7">
+          <p class="mb-5 text-xs uppercase tracking-[.2em] text-white/50">Profilo · Formazione · Esperienza</p>
+          <h1 class="font-display text-[clamp(2.65rem,10vw,9rem)] leading-[.9] tracking-[-.06em]">
+            Visual &amp;<br><em class="serif font-normal tracking-normal text-[#ff4d2e]">Motion</em> Designer
+          </h1>
+        </div>
+        <div class="flex min-w-0 flex-wrap gap-3 lg:col-span-5 lg:justify-end lg:pb-2">
+          <span class="pill-w">21 anni</span>
+          <span class="pill rounded-full bg-[#3ddc3a] px-4 py-2 text-xs font-medium text-[#121214]">Sandrigo · VI</span>
+        </div>
+      </div>
+
+      <div class="mt-14 grid gap-10 border-t border-white/15 pt-8 md:mt-20 md:grid-cols-12 md:gap-8">
+        <p class="text-xs uppercase tracking-[.18em] text-white/45 md:col-span-3">Piacere, Mattia</p>
+        <div class="space-y-6 text-lg font-light leading-relaxed text-white/70 md:col-span-8 md:col-start-5 md:text-xl">
+          <p>Sono un designer di 21 anni di Sandrigo (VI), diplomato all’ITS Digital Academy come Media Designer e CG Animation Specialist. Ho maturato due anni di esperienza tra grafica vettoriale e raster, impaginazione, motion graphics 2D, video editing, modellazione 3D con Maya, fotografia e ripresa video.</p>
+          <p>Dopo 360 ore di stage in uno studio creativo, cerco la mia prima esperienza in uno studio di grafica, in un’agenzia pubblicitaria o in un’azienda di packaging e rebranding. Vorrei crescere in un team e lavorare su progetti reali.</p>
+        </div>
+      </div>
+
+      <div class="reveal mt-16 overflow-hidden rounded-[2rem] bg-[#ff4d2e] p-7 text-[#121214] md:mt-24 md:p-12 lg:p-16">
+        <p class="text-xs uppercase tracking-[.18em] text-black/60">Quello che mi muove</p>
+        <p class="mt-8 max-w-5xl font-display text-[clamp(1.8rem,4.6vw,4.5rem)] leading-[1.08] tracking-[-.04em]">
+          Costruire un oggetto da zero, dargli luce e farlo diventare <em class="serif font-normal">l’immagine di un brand.</em>
+        </p>
+        <p class="mt-6 max-w-2xl text-base leading-relaxed text-black/70">Mi appassionano soprattutto la modellazione 3D e la grafica per l’advertising di prodotto.</p>
+      </div>
+
+      <div class="mt-16 grid gap-5 md:mt-24 lg:grid-cols-12">
+        <section class="reveal min-w-0 rounded-[2rem] border border-white/15 bg-white/[.04] p-7 md:p-10 lg:col-span-4" aria-labelledby="education-title">
+          <p class="text-xs uppercase tracking-[.18em] text-white/45">01 / Formazione</p>
+          <h2 id="education-title" class="font-display mt-12 text-3xl leading-tight">ITS Digital<br>Academy</h2>
+          <p class="mt-5 text-sm leading-relaxed text-white/65">Diploma biennale in Media Designer e CG Animation Specialist.</p>
+        </section>
+
+        <section class="reveal min-w-0 rounded-[2rem] bg-[#e9e8e4] p-7 text-[#121214] md:p-10 lg:col-span-8" aria-labelledby="experience-title">
+          <div class="flex min-w-0 flex-wrap items-start justify-between gap-5">
+            <div>
+              <p class="text-xs uppercase tracking-[.18em] text-black/50">02 / Esperienza</p>
+              <h2 id="experience-title" class="font-display mt-8 break-all text-[clamp(1.5rem,8vw,2rem)] md:break-normal md:text-4xl">SETPOINTSTUDIO</h2>
+              <p class="mt-2 text-sm text-black/60">Stage · Schio · 360 ore</p>
+            </div>
+            <span class="rounded-full bg-[#3ddc3a] px-4 py-2 text-xs font-medium">Studio creativo</span>
+          </div>
+          <ul class="mt-8 grid gap-x-8 gap-y-5 border-t border-black/15 pt-7 text-sm leading-relaxed text-black/75 md:grid-cols-2">
+            <li class="flex gap-3"><span class="font-display text-[#ff4d2e]">↗</span><span class="min-w-0 flex-1 break-words">Video editing di post social e di un video aziendale.</span></li>
+            <li class="flex gap-3"><span class="font-display text-[#ff4d2e]">↗</span><span class="min-w-0 flex-1 break-words">Grafica per i contenuti dello studio.</span></li>
+            <li class="flex gap-3"><span class="font-display text-[#ff4d2e]">↗</span><span class="min-w-0 flex-1 break-words">Modellazione 3D da zero di oggetti di scena e render per un video documentaristico sulle gallerie del Pasubio.</span></li>
+            <li class="flex gap-3"><span class="font-display text-[#ff4d2e]">↗</span><span class="min-w-0 flex-1 break-words">Montaggio di video in motion graphics.</span></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="flex flex-wrap justify-between gap-4 border-t border-white/10 px-6 py-8 text-xs text-white/45 md:px-10">
+  <p>© <span id="year"></span> Mattia Raccanelli</p>
+  <a class="link-u hover:text-white" href="contact.html">Contattami</a>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
